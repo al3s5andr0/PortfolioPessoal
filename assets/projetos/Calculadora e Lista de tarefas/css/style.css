@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{ /*criando uma variavel global e atribuindo o nome para manipular em css*/
+    --primary-color: rgb(5, 75, 107); /*o nome precisa começar com -- para criar a variavel */
+    --primary-color-dark:  rgb(3, 47, 66);
+
+}
+
+* {
+    box-sizing: border-box; /* não sei oque fazem */
+    outline: 0; /* esses dois comando */
+    
+}
+
+body {
+    margin:0; /*  margin e padding 0 para resetar a pagina qunado carregada*/
+    padding: 0; /* margem e espaço entre uma coisa e outra */
+    background: var(--primary-color); /*para invocar a variavel sempre usa var(nome da variavel)*/
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em; /*tamanho da linha*/
+
+}
+
+.container { /*manipulando o centro do conteudo (a folha do conteudo)*/
+    max-width: 640px;
+    margin: 20px auto; /* distancia do topo e do rodape sobre conteudo*/
+    background: #fff; /*fundo branco*/
+    padding: 20px; /*distancia entre os conteúdos*/
+    border-radius: 20px;
+    
+}
+
+
+.liTarefa {
+    font-size: 15px;
+}
+
+.botaoApagar {
+    font-size: 10px;
+}

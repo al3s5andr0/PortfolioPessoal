@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel='stylesheet' href="css/style.css">
+    </link:rel>
+</head>
+
+<body>
+    <section class="container" id="container">
+        <p>
+        <h1 class="titulo" id='titulo'>Escolha uma ferramenta</h1>
+
+        <abbr title="Criar uma calculadora ">
+            <input type="button" value="Calculadora" id="calculator" class="calculator"></abbr>
+
+        <abbr title="Criar uma lista de tarefas ">
+            <input type="button" value="Lista de Tarefas" id="taskList" class="taskList"></abbr>
+        
+        <section class="Approach" id="Approach"></section></p>
+
+
+    </section>
+
+    <script id="scriptInicial"></script>
+
+    <script>
+
+        const script = document.getElementById('scriptInicial')
+
+
+        document.addEventListener('click', function (e) {
+            let elemento = e.target
+            console.log(elemento)
+
+             if (elemento.id === 'calculator') {
+                script.removeAttribute('src')
+                script.setAttribute('src','scriptCalculadora.js')                
+                return
+            }
+             if (elemento.id === 'taskList') {
+                script.setAttribute('src','scriptListaTarefas.js')
+                script.id = 'fechar'
+                return
+            }
+             if (elemento.id === 'fechar') {
+                script.removeAttribute('src')
+                script.id = 'scriptInicial'
+                return
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

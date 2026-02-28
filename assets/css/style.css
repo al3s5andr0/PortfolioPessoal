@@ -1,0 +1,174 @@
+html{
+  background-color: #000305;
+  display: grid;
+  height: auto;
+  max-width: auto;
+}
+
+/* Formatação do cabeçalho */
+header {
+  background-color: #6aa4d423;
+  color: #fff;
+  padding: 20px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 0 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+/* -------------------------------- */
+
+/* Formatação do rodapé */
+footer {
+  background-color: #6aa4d423;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+footer .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px; 
+}
+/* -------------------------------- */
+
+/* Formatação meio */
+.meio {
+background-image: url(nuvemAndando.gif);
+  height: auto;
+  width: auto;
+  background-color: #5486a793;
+  text-align:center;
+}
+
+/* Formatação fundo */
+.fundoNuvem {
+  display: ruby;
+  position: absolute;
+  left: 800px;
+}
+
+/* Fromatação conteúdos */
+.conteudoInicial {
+  display: inline-flex;
+  height: 950px;
+  max-height: auto;
+  max-width: 850px;
+  min-height: 840px;
+  background-color: #fffffff6;
+  margin: 10px;
+  border-radius: 150px;
+} 
+.conteudoSobreMim {
+  margin: 10px;
+  border-radius: 70px;
+  display: inline-flex;
+  max-height: 1600px;
+  max-width: 1400px;
+  background-color:  #fffffff6;
+}
+/* Formatação perfil profissional*/
+.colunasPerfil {
+  font: 18px;
+  max-width: auto;
+  max-height: auto;
+  min-width: 300px;
+  background:  #fffffff6;
+  padding: 20px;
+}
+.conteudoContatoFormação  {
+  align-items: center;
+  text-align: center;
+  display: inline-flex;
+  background-color:  #fffffff6;
+  height: auto;
+  width: auto;
+  padding: 0px 20px 0px 0px;
+}
+.containerPerfilProfissional {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas iguais */  
+}
+.conteudoProjetos {
+  margin: 10px;
+  display: inline-flex;
+  max-height: auto;
+  max-width: 1050px;
+  height: auto;
+  border-radius: 70px;
+  min-height: auto;
+  background-color:  #fffffff6;
+}
+.conteudoEmbolado {
+  position: relative;
+  padding-top: 100px;
+}
+.conteudoAudio {
+  padding: 10px 0px 0px 0px;
+  height: auto;
+  width: auto;
+}
+.conteudoContato {
+  margin: 10px;
+  display: inline-flex;
+  background-color:  #fffffff6;
+  height: 750px;
+  width: auto;
+  border-radius: 20px;
+  padding-top: 60px;
+}
+/* -------------------------------- */
+
+/* Formatação de todos os titulos */
+.titulo {
+  font-size: 30px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+/* Formatação de todos os textos */
+.texto {
+  font-size: 20.2px; 
+  flex: 1 1 500px; 
+  max-width: max-content;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+/* Estilo de foto profissional */
+.foto {
+  font-size: 18px; 
+  max-width: max-content; 
+  padding: 0px 20px 0px 0px;
+}
+/* Cabeçalho dados pessoais */
+.dadosPessoais {
+  display: flex;
+  justify-content: center;
+  font-family: 'minhaFonte' ;
+  font-size: 40px;
+  background-color: #0000009c;
+  margin: 0px;
+}
+/* -------------------------------- */
+
+/* Importando fonte */
+@font-face {
+    font-family: 'minhaFonte';
+    src: url(FormaleScript_PERSONAL_USE_ONLY.otf) format('opentype'); 
+}
+
+
+
